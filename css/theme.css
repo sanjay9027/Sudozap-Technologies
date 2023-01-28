@@ -1,0 +1,472 @@
+/* ===========theme=================== */
+@import url("/css/responsive.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+:root {
+    --menu-fontsize: 20px;
+    --icon-large: 60px;
+    --subtitle-fontsize: 25px;
+    --font-weight800: 800;
+    --font-weight600: 600;
+    --primary-color: #ff4500;
+    --secondary-color: #F06E0B;
+    --banner-color: var(--tertiry-color);
+    --bgf-color: var(--black-color);
+    --tertiry-color: rgb(26, 24, 23);
+    /* --tertiry-color: rgb(19, 17, 17); */
+    --gray-color: rgb(209, 202, 202);
+    --white-color: #ffffff;
+    --black-color: #000;
+    --highlight-color: #D6ED17FF;
+    --gray-icon: rgb(110, 100, 80);
+    --chandan-color: rgb(228, 178, 15);
+    --green-color: rgb(12, 235, 12);
+    --abtImg-height: 250px;
+}
+
+
+
+body {
+    background: var(--black-color);
+}
+
+/* ------ preloader css------  */
+
+/* pre loader */
+#preloader {
+    background: #000 url('spin2.gif') no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+    color: var(--white-color);
+}
+
+p,
+a {
+    color: rgb(235, 228, 228);
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 22px;
+    color: var(--primary-color);
+    letter-spacing: 1.5px;
+}
+
+h3 {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 26px;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+
+p,
+i {
+    font-size: 16px;
+}
+
+hr {
+    border: 1px solid rgb(90, 60, 5);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 8px 40px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: var(--white-color);
+    cursor: pointer;
+    width: 50%;
+    font-size: 16px;
+    font-weight: var(--font-weight600);
+    border: 0;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+}
+
+
+#hero {
+    width: 100%;
+    /* height: 100vh;  */
+}
+
+/* general css for all  */
+.container {
+    padding: 2% 4%;
+}
+
+
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    background: var(--black-color);
+    padding: 1.5% 4%;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    left: 0;
+
+}
+
+.container nav .logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 6px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: var(--menu-fontsize);
+    font-weight: var(--font-weight600);
+    position: relative;
+    color: var(--white-color);
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav .nav-icon {
+    display: none;
+}
+
+/* section title ares  */
+.section-title {
+    text-align: center;
+    margin: 10px 0 40px 0;
+    position: relative;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.section-title span {
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ----------------------------------------------------  */
+/* Grid view for all elements general purpose starts here  */
+.container-cards {
+    margin-top: 5%;
+}
+
+
+.cards-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+
+}
+
+.cards-list .cards {
+    background: var(--tertiry-color);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.cards .cards-bullet ul {
+    align-items: center;
+    display: flex;
+
+}
+
+.cards-bullet ul span {
+    background: var(--white-color);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:600px) {
+    .cards-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+
+    }
+}
+
+/* effects  */
+.zoom-effect {
+    transition: transform 0.4s;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.02);
+}
+
+.upside {
+    transition: transform 0.6s;
+}
+
+.upside:hover {
+    transform: translateY(-10px);
+}
+
+/* Grid view for all elements general purpose Ends here  */
+
+
+/* text area generic classes  */
+.text-md {
+    line-height: 25px;
+    text-align: center;
+    padding: 0 8%;
+}
+
+.text-md p span {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+/* ------------------------------footer ---------------------------- */
+
+#footer {
+    background-color: var(--bgf-color);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+.footer-col1,
+.footer-col2 {
+    padding: 15px 10px 0 10px;
+}
+
+.footer-col1 .logo {
+    width: 160px;
+    margin-bottom: 10px;
+
+}
+
+.tag-line {
+    margin-right: 50px;
+}
+
+.qr-code {
+    width: 50%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.footer-title {
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 4px;
+}
+
+.footer-title::before {
+    content: "";
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 55%;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col2 li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.footer-col2 li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* copyright sectioon starts here  */
+.copyright-section {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion span a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* scrollToTop Butn  */
+.scroll-btn {
+    position: fixed;
+    right: 1%;
+    bottom: 10%;
+    z-index: 4;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 50%;
+    border: 0;
+}
+
+.scroll-btn.active {
+    visibility: visible;
+}
+
+.scroll-btn .fa-solid {
+    color: #F06E0B;
+    font-size: 40px;
+}
+
+/* ------------------- footer ends here ----------------------  */
+
+p span {
+
+    color: var(--white-color);
+}
+
+/* ===== banner=============== */
+.banner {
+    margin: 3% 0;
+
+}
+
+.banner-hash {
+    width: 100%;
+    background: var(--tertiry-color);
+    text-align: center;
+}
+
+.banner-hash h1 {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 2% 0;
+}
+
+.banner-hash h1 span {
+    color: rgb(197, 187, 187);
+}
+
+/* ------------------banner -------------------  */
+/* contact us banner */
+.container.bg {
+    background-color: var(--banner-color);
+}
+
+.flex-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-sm {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.content {
+    width: 70%;
+}
+
+.social {
+    width: 25%;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+/* contact us banner */
+
+/* doc page css  */
+.text-area {
+
+    background-color: var(--tertiry-color);
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.text-area h4 {
+    margin-top: 20px;
+
+}
+
+.text-area ol {
+    padding: 3%;
+}
+
+.text-area li {
+
+    margin-bottom: 10px 2%;
+    color: var(--gray-color);
+    padding: 10px;
+}
+
+.cards.bd {
+    border: 2px solid var(--primary-color);
+    background: transparent;
+}

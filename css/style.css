@@ -1,0 +1,254 @@
+@import url("theme.css");
+
+#hero {
+    width: 100%;
+    height: 100vh;
+}
+
+/* general css for all  */
+.container {
+    padding: 2% 4%;
+}
+
+.container nav .logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 6px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: var(--menu-fontsize);
+    font-weight: var(--font-weight600);
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav .nav-icon {
+    display: none;
+}
+
+
+
+/* theme ends here  */
+
+/* -------------- header text --------------- */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.header-text {
+    flex-basis: 50%;
+}
+.header-text h1{
+    letter-spacing: 2px;
+}
+.header-text h1 span {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.header-text p {
+    margin: 20px 0 30px 0;
+    line-height: 23px;
+}
+
+.header-img {
+    padding: 0 0px;
+}
+
+.header-img img {
+    width: 400px;
+    height: 400px;
+    animation-name: fade-img;
+    animation-duration: 2s;
+}
+
+@keyframes fade-img {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -------------------Header section ends here ---------  */
+
+/* ------------------------- Bullet Points section : why chose us---------------------  */
+
+.bullet {
+    margin-bottom: 20px;
+}
+
+.bullet p {
+    padding: 10px 10px 10px 34px;
+}
+
+.points {
+    display: flex;
+    align-items: center;
+}
+
+.points span {
+    background: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: 0;
+}
+.points i{
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* --------------------------------------- bullet points section : why chose us---------------------- */
+
+
+
+
+
+
+
+
+/* ------------------- footer starts here ----------------------  */
+#footer {
+    background-color: rgb(17, 13, 3);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+.footer-col1,
+.footer-col2 {
+    padding: 15px 40px 0 40px;
+}
+
+.footer-col1 .logo {
+    width: 160px;
+    margin-bottom: 10px;
+
+}
+
+.contact-text {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    margin-left: 10px;
+}
+
+.contact-text i {
+    color: rgb(177, 119, 10);
+}
+
+.footer-title {
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 4px;
+}
+
+.footer-title::before {
+    content: "";
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 55%;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col2 li a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.footer-col2 li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* copyright sectioon starts here  */
+.copyright-section {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion span a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* scrollToTop Butn  */
+.scroll-btn {
+    position: fixed;
+    right: 1%;
+    bottom: 10%;
+    z-index: 4;
+    cursor: pointer;
+    visibility: hidden;
+    border-radius: 50%;
+    border: 0;
+}
+
+.scroll-btn.active {
+    visibility: visible;
+}
+
+.scroll-btn .fa-solid {
+    color: #F06E0B;
+    font-size: 40px;
+}
+
+/* whatsapp button  */
+#wp {
+    font-size: var(--menu-fontsize);
+    font-weight: bolder;
+}
+
+#wp:hover {
+    color: var(--green-color);
+}
+
+/* ------------------- footer ends here ----------------------  */
+
+/* --------------- making responsive------------------  */

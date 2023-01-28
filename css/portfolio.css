@@ -1,0 +1,62 @@
+@import url("theme.css");
+
+/* -------------------- contact starts here ---------------------------- */
+
+body{
+    box-sizing: border-box;
+}
+.container-cards{
+    margin-top: 5%;
+}
+
+
+.cards-list.large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-gap: 40px;
+    
+}
+.cards.cn h3{
+    text-align: center;
+}
+
+
+/* dots */
+.dots {
+    display: flex;
+    align-items: center;
+
+}
+
+.dots span {
+    background: var(--primary-color);
+    width: 3px;
+    height: 20px;
+    display: block;
+}
+
+.cards-list p{
+    line-height: 25px;
+    text-align: left;
+    margin-left: 20px;
+}
+.btn.contact-btn{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .dots span {
+    
+        height: 40px;
+        
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .contact-cards {
+        margin: 0 60px;
+    }
+}
+
+
+

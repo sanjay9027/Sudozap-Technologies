@@ -1,0 +1,266 @@
+@import url("theme.css");
+
+/* ============ mobile===============  */
+@media only screen and (max-width:600px) {
+    #hero {
+        height: auto;
+    }
+
+    .container {
+
+        padding: 4%;
+    }
+
+    nav .nav-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    #close-btn {
+        display: none;
+    }
+
+    nav ul {
+        background: var(--black-color);
+        position: fixed;
+        top: 0;
+        left: -400px;
+        width: 280px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 4;
+        transition: left .5s;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a::after {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        color: var(--primary-color);
+    }
+
+
+
+    .header-container {
+        display: block;
+        margin-top: 8%;
+    }
+
+    .header-text {
+        margin-top: 20%;
+        flex-basis: 100%;
+        padding-right: 4%;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .header-text h1 span {
+        font-size: 40px;
+    }
+
+
+    .btn {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .header-img {
+        margin-top: 20px;
+    }
+
+    .header-img img {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .about {
+        padding: 0;
+    }
+
+    .footer-col1,
+    .footer-col2 {
+        padding: 15px 20px;
+    }
+
+    .qr-code {
+        width: 45%;
+        margin: 0;
+    }
+
+    .form-element {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+  
+
+    .banner-hash h1 {
+        font-weight: 600;
+        font-size: 18px;
+        padding: 4% 0;
+    }
+
+    .copyright-section {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* contact banner  */
+    .title-sm {
+        font-size: 14px;
+    }
+
+    .social {
+        /* border: 2px solid red; */
+        width: 30%;
+    }
+
+    .social a {
+        font-size: 14px;
+        text-align: center;
+        padding: 4px;
+
+    }
+
+    /* do page  */
+    .text-area {
+        margin: 10px;
+    }
+
+    .text-area h4 {
+        text-align: center;
+    }
+
+    .text-area ol {
+        padding-left: 10%;
+    }
+
+    .text-area li {
+        margin-bottom: 0 2%;
+        padding: 0 10px;
+    }
+
+    .text-area ul {
+        padding: 10px;
+    }
+
+}
+
+@media only screen and (min-width:600px) and (max-width:1000px) {
+
+    /* contact banner  */
+    #hero {
+        height: auto;
+    }
+
+    .container {
+        padding: 4%;
+    }
+
+    nav .nav-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    #close-btn {
+        display: none;
+    }
+
+    nav ul {
+        background: var(--black-color);
+        position: fixed;
+        top: 0;
+        left: -400px;
+        width: 280px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 4;
+        transition: left .5s;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a::after {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        color: var(--primary-color);
+    }
+
+    .header-container {
+        display: block;
+        margin-top: 8%;
+    }
+
+    .header-text {
+        margin-top: 2%;
+        padding-right: 20%;
+    }
+
+    .header-img {
+        margin: 20px;
+    }
+
+    .header-img img {
+        padding-top: 25px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cards-list.cir {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+    }
+
+
+
+    /* footer  */
+    .footer-col1,
+    .footer-col2 {
+        padding: 0 20px;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 10px;
+    }
+
+    .tag-line {
+        margin-right: 0;
+    }
+
+    .scroll-btn {
+        bottom: 5%;
+    }
+
+    .form-element {
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    .banner-hash h1 {
+        font-weight: 700;
+        font-size: 30px;
+        padding: 3% 0;
+    }
+
+}
