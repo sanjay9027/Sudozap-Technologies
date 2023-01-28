@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+RewriteCond %{HTTP_HOST} ^sudozap.com [NC]
+RewriteRule ^(.*)$ http://www.sudozap.com/$1 [L,R=301]
+
+
+# for 404 page redirect
+ErrorDocument 404 /404.html
+
+</IfModule>
